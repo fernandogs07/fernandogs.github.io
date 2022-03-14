@@ -1,0 +1,380 @@
+body{
+    background-color: #027F9E;
+    padding: 5px;
+}
+main{
+    display: none;
+    background-color: #ececec;
+    border-radius: 10px;
+    box-shadow: 5px 5px 10px black;
+    width: 700px;
+    padding: 5px;
+    margin: auto;
+}
+div{
+    margin-top: 1px;
+    text-align: center;
+    padding: 5px;
+}
+
+p{
+    color: rgb(0, 0, 0);
+    font-family: Arial, Helvetica, sans-serif;
+    font-weight: bold;
+    display: flex;
+    margin: auto;
+    
+   
+}
+h1{
+    text-align: center;
+    font-weight: bold;
+    margin: auto;
+    padding: 5px;
+}
+h2{
+    text-align: center;
+    font-weight: bold;
+    margin: auto;
+    padding: 5px;
+}
+#funcionario{
+    display: block;
+    margin: auto;
+    align-items: center;
+}
+#nome{
+    display: block;
+    border-style: solid;
+    border-color: black;
+    /* box-shadow: 2px 2px 5px black; */
+    border-radius: 5px;
+    width: 300px;
+    height: 20px;
+    margin: auto;
+    
+}
+#salario{
+    display: inline-block;
+    margin: auto;
+    align-items: center;
+}
+#valor_salario{
+    display: block;
+    border-style: solid;
+    border-color: black;
+    /* box-shadow: 2px 2px 5px black; */
+    border-radius: 5px;
+    width: 300px;
+    height: 20px;
+    margin: auto;
+    
+}
+#adicional{
+    display: block;
+    margin: auto;
+    align-items: center;
+}
+span{
+    display: block;
+    color: rgb(0, 0, 0);
+    font-family: Arial, Helvetica, sans-serif;
+    font-weight: bold;
+}
+#adicional_valor{
+    display: block;
+    border-style: solid;
+    border-color: black;
+    /* box-shadow: 2px 2px 5px black; */
+    border-radius: 5px;
+    width: 150px;
+    height: 20px;
+    margin: auto;
+}
+#flag{
+    display: flex;
+}
+#flag2{
+    background-color: blue;
+    color: chocolate;
+    padding: 0 10px;
+    display: inline-flex;
+    align-items: center;
+    font-size: 15px;
+}
+#horas{
+    display: inline-block;
+    margin: auto;
+    align-items: center;
+}
+#valor_horas{
+    display: block;
+    border-style: solid;
+    border-color: black;
+    /* box-shadow: 2px 2px 5px black; */
+    border-radius: 5px;
+    width: 300px;
+    height: 20px;
+    margin: auto;
+    
+}
+#horas_normais{
+    display: inline-block;
+    margin: auto;
+    align-items: center;
+}
+#valor_horas_normais{
+    display: block;
+    border-style: solid;
+    border-color: black;
+    /* box-shadow: 2px 2px 5px black; */
+    border-radius: 5px;
+    width: 300px;
+    height: 20px;
+    margin: auto;
+    
+}
+#horas_domingo{
+    display: inline-block;
+    margin: auto;
+    align-items: center;
+}
+#valor_horas_domingo{
+    display: block;
+    border-style: solid;
+    border-color: black;
+    /* box-shadow: 2px 2px 5px black; */
+    border-radius: 5px;
+    width: 300px;
+    height: 20px;
+    margin: auto;
+    
+}
+#dias_uteis{
+    display: block;
+    margin: auto;
+    align-items: center;
+}
+#valor_dias_uteis{
+    display: block;
+    border-style: solid;
+    border-color: black;
+    /* box-shadow: 2px 2px 5px black; */
+    border-radius: 5px;
+    width: 300px;
+    height: 20px;
+    margin: auto;
+    
+}
+#dias_especiais{
+    display: block;
+    margin: auto;
+    align-items: center;
+}
+#valor_dias_especiais{
+    display: block;
+    border-style: solid;
+    border-color: black;
+    /* box-shadow: 2px 2px 5px black; */
+    border-radius: 5px;
+    width: 300px;
+    height: 20px;
+    margin: auto;
+    
+}
+#table{
+    display: none;
+}
+#table > tbody{
+    border: 1px;
+    background-color: #4e4d4b79;
+    padding: 20px;
+    
+}
+#table > tbody > tr > td{
+padding: 4px 10px;
+
+}
+#calculo{
+    border-style: solid;
+    border-color: black;
+    background-color: #21A3C4;
+    color: white;
+    /* box-shadow: 2px 2px 5px black; */
+    border-radius: 5px;
+    width: 100px;
+    height: 30px;
+}
+#limpar{
+    border-style: solid;
+    border-color: black;
+    background-color: #21A3C4;
+    color: white;
+    /* box-shadow: 2px 2px 5px black; */
+    border-radius: 5px;
+    width: 100px;
+    height: 30px;
+}
+#volta{
+    border-style: solid;
+    border-color: black;
+    background-color: #21A3C4;
+    color: white;
+    /* box-shadow: 2px 2px 5px black; */
+    border-radius: 5px;
+    width: 100px;
+    height: 30px;
+
+}
+
+#Abas{
+    background-color: #ffffff;
+    border-radius: 10px;
+    box-shadow: 5px 5px 10px black;
+    width: 200px;
+    height: 100px;
+    padding: 5px;
+    margin: auto;
+}
+
+@media screen and (max-width: 425px) {
+
+    main{
+        width: 300px;
+    }
+    h1{
+        font-size: 15px;
+        text-align: center;
+        font-weight: bold;
+    }
+    h2{
+        font-size: 12px;
+        text-align: center;
+        font-weight: bold;
+    }
+    #nome{
+        display: block;
+        border-style: solid;
+        border-color: black;
+        /* box-shadow: 2px 2px 5px black; */
+        border-radius: 5px;
+        width: 200px;
+        height: 20px;
+        margin: auto;
+        
+    }
+    
+    #valor_salario{
+        display: block;
+        border-style: solid;
+        border-color: black;
+        /* box-shadow: 2px 2px 5px black; */
+        border-radius: 5px;
+        width: 200px;
+        height: 20px;
+        margin: auto;
+        
+    }
+    #valor_horas{
+        display: block;
+        border-style: solid;
+        border-color: black;
+        /* box-shadow: 2px 2px 5px black; */
+        border-radius: 5px;
+        width: 200px;
+        height: 20px;
+        margin: auto;
+        
+    }
+    #valor_horas_normais{
+        display: block;
+        border-style: solid;
+        border-color: black;
+        /* box-shadow: 2px 2px 5px black; */
+        border-radius: 5px;
+        width: 200px;
+        height: 20px;
+        margin: auto;
+    }
+    #horas_domingo{
+        display: inline-block;
+        margin: auto;
+        align-items: center;
+    }
+    #valor_horas_domingo{
+        display: block;
+        border-style: solid;
+        border-color: black;
+        /* box-shadow: 2px 2px 5px black; */
+        border-radius: 5px;
+        width: 200px;
+        height: 20px;
+        margin: auto;
+        
+    }
+    span{
+        display: block;
+        color: blue;
+        font-family: Arial, Helvetica, sans-serif;
+        font-weight: bold;
+        text-align: center;
+    }
+    p{
+        color: blue;
+        font-family: Arial, Helvetica, sans-serif;
+        font-size: 12px;
+        font-weight: bold;
+        display: block;
+        margin: auto;
+        
+       
+    }
+    #table > tbody{
+        border: 1px;
+        background-color: #4e4d4b79;
+        padding: 0px;
+        
+       
+        
+    }
+    #table > tbody > tr > td{
+    padding: 1px 4px;
+    
+    }#dias_uteis{
+        display: block;
+        margin: auto;
+        align-items: center;
+    }
+    #valor_dias_uteis{
+        display: block;
+        border-style: solid;
+        border-color: black;
+        /* box-shadow: 2px 2px 5px black; */
+        border-radius: 5px;
+        width: 200px;
+        height: 20px;
+        margin: auto;
+        
+    }
+    #dias_especiais{
+        display: block;
+        margin: auto;
+        align-items: center;
+    }
+    #valor_dias_especiais{
+        display: block;
+        border-style: solid;
+        border-color: black;
+        /* box-shadow: 2px 2px 5px black; */
+        border-radius: 5px;
+        width: 200px;
+        height: 20px;
+        margin: auto;
+        
+    }
+
+
+
+
+
+}

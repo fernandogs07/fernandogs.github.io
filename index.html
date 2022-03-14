@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/style.css">
+    <!--<link rel="stylesheet" href="css/normalize.css">-->
+    <script type="text/javascript" src="javascript/javascript.js"></script>
+    <!--<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery-maskmoney/3.0.2/jquery.maskMoney.min.js"></script>-->
+    <title>Cálculo Horas</title> 
+</head>
+<section id="Abas">
+    <div>
+        <input type="button" value="Cálculo Horas" onclick="aba1()">
+        <input type="button" value="Cálculo Adicional noturno">
+    </div>
+</section>
+<body>
+    <main id="abcd">
+    <h1>Cálculo horas extras e DSR</h1>
+    <h2>Preencha os campos abaixo para horas extras</h2>
+    <div id="funcionario">
+        <span>Nome funcionário</span>
+        <input type="text" placeholder="Nome funcionário" id="nome">
+    </div>
+<div id="input_salarios">
+    <div id="salario">
+        <p>Salário bruto</p>
+        <input type="text" placeholder="Salário" onkeypress="return event.charCode >= 46 && event.charCode <= 57" id="valor_salario">
+    </div>
+    <div id="horas">
+        <p>Jornada de horas</p>
+        <input type="number" placeholder="Horas trabalhadas" onkeypress="return event.charCode >= 46 && event.charCode <= 57" id="valor_horas">
+    </div>
+   
+</div>
+<div id="adicional">
+        <span>Adicional hora extra</span>
+        <input type="number" placeholder="Horas normais" onkeypress="return event.charCode >= 46 && event.charCode <= 57" id="adicional_valor">
+</div>
+<div id="input_salarios">
+    <div id="horas_normais">
+        <p>Horas Normais</p>
+        <input type="number" placeholder="Horas normais" onkeypress="return event.charCode >= 46 && event.charCode <= 57" id="valor_horas_normais">
+    </div>
+    <div id="horas_domingo">
+        <p>Horas domingos e feriados</p>
+        <input type="number" placeholder="Horas domingos e feriados" onkeypress="return event.charCode >= 46 && event.charCode <= 57" id="valor_horas_domingo">
+    </div>
+</div>
+<div id="dsr">
+    <h2>Agora vamos prencher os dados para DSR</h2>
+    <div id="dias_uteis">
+        <span>Quantidades de dias úteis no mês</span>
+        <input type="number" placeholder="Dias úteis" id="valor_dias_uteis">
+    </div>
+    <div id="dias_especiais">
+        <span>Horas domingos e feriados</span>
+        <input type="number" placeholder="Domingos e feriados no mês" id="valor_dias_especiais">
+    </div>
+</div>
+
+    <div>
+        <button id="calculo" onclick="calculo()">Calcular</button>
+        <button id="limpar" onclick="limpar()">Limpar</button>
+    </div> 
+
+    <div id="resultado">
+        <p id="horas_extra"></p>
+        <table ID="table">
+            <tbody >
+            <tr>
+                <td>Salário</td>
+                <td>Valor extra 60%</td>
+                <td>Valor extra 100%</td>
+                <td>Valor DSR</td>
+                <td>Valor total a receber</td>
+            </tr>
+            <tr>
+                <td><p id="salario_view"></p></td>
+                <td><p id="valorextras"></p></td>
+                <td><p id="valorextrasespecial"></p></td>
+                <td><p id="valor_dsr"></p></td>
+                <td><p id="total_view"></p></td>
+               
+            </tr>
+        </table>
+        <button id="limpar" onclick="location.href = 'login.html';">Sair</button>
+        <button id="volta" onclick="volta()">Voltar</button>
+</main>
+</body>
+</html>
