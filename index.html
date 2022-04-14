@@ -7,16 +7,16 @@
     <link rel="stylesheet" href="css/style.css">
     <!--<link rel="stylesheet" href="css/normalize.css">-->
     <script type="text/javascript" src="javascript/javascript.js"></script>
-    <!--<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery-maskmoney/3.0.2/jquery.maskMoney.min.js"></script>-->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery-maskmoney/3.0.2/jquery.maskMoney.min.js"></script>
     <title>Cálculo Horas</title> 
 </head>
-<section id="Abas">
+<!-- <section id="Abas">
     <div>
         <input type="button" value="Cálculo Horas" onclick="aba1()">
         <input type="button" value="Cálculo Adicional noturno">
     </div>
-</section>
+</section> -->
 <body>
     <main id="abcd">
     <h1>Cálculo horas extras e DSR</h1>
@@ -28,26 +28,26 @@
 <div id="input_salarios">
     <div id="salario">
         <p>Salário bruto</p>
-        <input type="text" placeholder="Salário" onkeypress="return event.charCode >= 46 && event.charCode <= 57" id="valor_salario">
+        <input type="text" placeholder="Salário" id="valor_salario">
     </div>
     <div id="horas">
         <p>Jornada de horas</p>
-        <input type="number" placeholder="Horas trabalhadas" onkeypress="return event.charCode >= 46 && event.charCode <= 57" id="valor_horas">
+        <input type="number" placeholder="Horas trabalhadas" id="valor_horas">
     </div>
    
 </div>
 <div id="adicional">
         <span>Adicional hora extra</span>
-        <input type="number" placeholder="Horas normais" onkeypress="return event.charCode >= 46 && event.charCode <= 57" id="adicional_valor">
+        <input type="number" placeholder="Horas normais" id="adicional_valor">
 </div>
 <div id="input_salarios">
     <div id="horas_normais">
         <p>Horas Normais</p>
-        <input type="number" placeholder="Horas normais" onkeypress="return event.charCode >= 46 && event.charCode <= 57" id="valor_horas_normais">
+        <input type="number" placeholder="Horas normais" id="valor_horas_normais">
     </div>
     <div id="horas_domingo">
         <p>Horas domingos e feriados</p>
-        <input type="number" placeholder="Horas domingos e feriados" onkeypress="return event.charCode >= 46 && event.charCode <= 57" id="valor_horas_domingo">
+        <input type="number" placeholder="Horas domingos e feriados" id="valor_horas_domingo">
     </div>
 </div>
 <div id="dsr">

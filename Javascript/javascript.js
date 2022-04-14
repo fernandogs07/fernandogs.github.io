@@ -1,5 +1,6 @@
 function calculo(){
 
+    //Declaração variáveis
     var nome = document.getElementById("nome").value
     var salario = parseFloat(document.getElementById("valor_salario").value)
     var horasmes = Number(document.getElementById("valor_horas").value)
@@ -68,18 +69,7 @@ function limpar(){
         //usuarios.push("administrator")
         //senhas.push("240191")
     }
-
-    function aba1(){
-
-        var a = document.getElementById('abcd')
-        var b = document.getElementById('Abas')
-        //var c = document.getElementById('volta')
-        a.style.display='block'
-        b.style.display='none'
-        
-
-    }
-    function volta(){
+     function volta(){
 
 
         location = location
